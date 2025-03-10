@@ -1,0 +1,111 @@
+/* 🌑 Global Styles - Applies to the entire page */
+body {
+  display: flex; /* Centers the player in the viewport */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #111; /* Dark background for a modern look */
+  color: white; /* White text for contrast */
+  font-family: Arial, sans-serif; /* Ensures readability */
+}
+
+/* 🎵 Music Player Container - Main player styling */
+.player {
+  text-align: center; /* Centers content inside */
+  width: 350px; /* Fixed width */
+  background: #222; /* Darker background for contrast */
+  padding: 20px; /* Adds spacing inside */
+  border-radius: 10px; /* Smooth rounded edges */
+  box-shadow: 0px 0px 10px white; /* Adds a glowing effect */
+}
+
+/* 🎶 Album Cover - Styling for the song image */
+#album-cover {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  border-radius: 10px; /* Rounded edges */
+  margin-bottom: 15px; /* Space below the image */
+  object-fit: cover; /* Ensures the image fills the space */
+  border: 2px solid white; /* White border for contrast */
+}
+
+/* 🎼 Song Info - Title and Artist */
+.now-playing h2 {
+  margin: 10px 0 5px; /* Spacing adjustments */
+  font-size: 20px; /* Song title size */
+}
+
+.now-playing h4 {
+  margin: 5px 0 15px; /* Adjusts spacing */
+  font-size: 16px; /* Artist name size */
+  color: #bbb; /* Light gray for subtle contrast */
+}
+
+/* 📊 Progress Bar - Song playback progress */
+.progress {
+  width: 100%; /* Full width of the container */
+  height: 5px; /* Thin progress bar */
+  background: #444; /* Dark gray background */
+  margin: 10px 0; /* Adds spacing */
+  cursor: pointer; /* Allows clicking to seek */
+}
+
+.progress-bar {
+  width: 0%; /* Starts empty and fills as song plays */
+  height: 100%; /* Matches progress bar height */
+  background: #1db954; /* Green color for progress */
+}
+
+/* 🎛️ Controls - Play, Pause, Next, and Previous buttons */
+.controls button {
+  background: none; /* Transparent background */
+  border: 1px solid white; /* White border */
+  padding: 5px 10px; /* Button padding */
+  margin: 5px; /* Spacing between buttons */
+  color: white; /* White text */
+  cursor: pointer; /* Indicates clickable */
+  border-radius: 5px; /* Slightly rounded edges */
+}
+
+.controls button:hover {
+  background: white; /* Turns white when hovered */
+  color: black; /* Changes text color for contrast */
+}
+
+/* 🔊 Volume Control */
+#volume {
+  width: 100%; /* Full width */
+  margin: 10px 0; /* Spacing */
+}
+
+/* 📜 Playlist Section */
+.playlist-container h3 {
+  text-align: center; /* Centers the title */
+  margin-top: 15px; /* Adds spacing above */
+  font-size: 18px; /* Adjusts font size */
+}
+
+/* 📂 Playlist Items */
+#playlist {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* No extra padding */
+}
+
+#playlist li {
+  padding: 10px; /* Adds spacing */
+  background: #333; /* Darker gray for contrast */
+  margin: 5px 0; /* Adds spacing between songs */
+  cursor: pointer; /* Indicates clickability */
+  border-radius: 5px; /* Rounded edges */
+}
+
+#playlist li:hover {
+  background: #555; /* Lightens on hover */
+}
+
+/* ✅ Active Song - Highlights currently playing song */
+.active-song {
+  background: #1db954 !important; /* Green highlight */
+  color: black; /* Changes text color */
+  font-weight: bold; /* Makes text bold */
+}

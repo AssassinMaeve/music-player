@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  
+</head>
+
+<body>
+  <script src="js/app.js" defer></script>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <!-- Album Cover -->
+    <img id="album-cover" src="cover1.jpg" alt="Album Cover" class="album-cover">
+
+    <!-- Now Playing Section -->
+    <div class="now-playing">
+        <h2 id="song-title">Song Title</h2>
+        <h4 id="artist">Artist</h4>
+        <audio id="audio" controls></audio>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress" onclick="seek(event)">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button onclick="prevSong()">⏮ Prev</button>
+        <button onclick="playPause()" id="playPauseBtn">▶ Play</button>
+        <button onclick="nextSong()">⏭ Next</button>
+    </div>
+
+    <input type="range" id="volume" min="0" max="1" step="0.1" onchange="setVolume()">
+
+    <!-- Playlist Section -->
+    <div class="playlist-container">
+        <h3>🎵 Old Songs</h3>
+        <ul id="playlist"></ul>
+    </div>
+</div>
+
+
+</body>
+
+</html>
