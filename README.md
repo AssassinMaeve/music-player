@@ -67,5 +67,3 @@ const playlist = [
 This project is **open-source** under the **MIT License** – feel free to modify and improve!  
 
 ---
-
-This version is **detailed yet simple**, with instructions for users and developers. Let me know if you need further changes! 🚀
