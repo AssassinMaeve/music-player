@@ -1,7 +1,3 @@
-Here’s a more **detailed** `README.md` for your **Music Player** project:  
-
----
-
 # 🎵 Music Player  
 
 A **simple and elegant music player** built with **HTML, CSS, and JavaScript**, featuring a responsive UI, album covers, and interactive controls.  
